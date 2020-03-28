@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar color="#09243f">
+        <ion-icon color="white" (click)="backToMenu()" slot="start" size="large" name="arrow-back-outline"></ion-icon>
+        <ion-title color="white" class="ion-text-center">Controlador de Luces</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <ion-avatar class="square-avatar door-avatar">
+      <img src="{{urlDoorOpen}}" />
+  </ion-avatar> -->
+    <ion-buttons>
+        <ion-button (click)="onClick('lamp1')" style="margin-top: 35%;">
+            <h2>Cocina</h2>
+
+            <ion-icon name="radio-button-off-outline" *ngIf="!lamp1"></ion-icon>
+            <ion-icon name="radio-button-on-outline" *ngIf="lamp1"></ion-icon>
+
+        </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+        <ion-button (click)="onClick('lamp2')" style="margin-top: 15%;">
+            <h2>Sala</h2>
+            <ion-icon name="radio-button-off-outline" *ngIf="!lamp2"></ion-icon>
+            <ion-icon name="radio-button-on-outline" *ngIf="lamp2"></ion-icon>
+
+        </ion-button>
+    </ion-buttons>
+    <ion-buttons>
+        <ion-button (click)="onClick('lamp3')" style="margin-top: 15%;">
+            <h2>Entrada</h2>
+            <ion-icon name="radio-button-off-outline" *ngIf="!lamp3"></ion-icon>
+            <ion-icon name="radio-button-on-outline" *ngIf="lamp3"></ion-icon>
+
+        </ion-button>
+    </ion-buttons>
+
+
+
+    <!-- <h2>Luz Habitación</h2>
+    <ion-segment class="segment-door" (ionChange)="segmentChanged($event)">
+        <ion-segment-button href="#close" value="close">
+            <ion-icon name="radio-button-off-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button href="#open" value="open">
+            <ion-icon name="radio-button-on-outline"></ion-icon>
+        </ion-segment-button>
+    </ion-segment>
+    <h2>Luz Entrada</h2>
+    <ion-segment class="segment-door" (ionChange)="segmentChanged($event)">
+        <ion-segment-button href="#close" value="close">
+            <ion-icon name="radio-button-off-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button href="#open" value="open">
+            <ion-icon name="radio-button-on-outline"></ion-icon>
+        </ion-segment-button>
+    </ion-segment> -->
+</ion-content>

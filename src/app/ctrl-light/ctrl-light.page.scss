@@ -1,0 +1,52 @@
+ion-content {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    --background: url("../../assets/img/bag4.jpg") 0 0/100% 100% no-repeat;
+}
+
+ion-toolbar {
+    background-color: #09223b;
+    color: white;
+}
+
+ion-toolbar>ion-icon {
+    margin-left: 2%;
+}
+
+ion-avatar {
+    height: 30%;
+    width: 65%;
+    // border-radius: 0px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 25%;
+    // margin-left: 15%;
+}
+
+ion-button {
+    height: 100%;
+}
+
+ion-buttons {
+    margin-left: 15%;
+}
+
+ion-icon {
+    float: right;
+    font-size: 6.5rem;
+}
+
+ion-button>ion-icon[name="radio-button-off-outline"] {
+    color: var(--ion-color-danger);
+}
+
+ion-button>ion-icon[name="radio-button-on-outline"] {
+    color: var(--ion-color-success);
+}

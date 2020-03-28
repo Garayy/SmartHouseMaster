@@ -1,20 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="padding">
+    <h1 class="ion-text-center">¿DE QUÉ QUIERES TOMAR CONTROL?</h1>
+    <ion-slides pager="true" [options]="slideOps">
+        <ion-slide *ngFor="let tool of tools">
+            <ion-avatar (click)="selectTool(tool.name)">
+                <img src="{{tool.imgUrl}}" />
+                 <p color="danger" *ngIf="alertError1">Esta opcion no esta habilitada</p> 
+                <h2>
+                    <b>
+                        {{tool.name}}
+                    </b>
+                </h2>
+              
+            </ion-avatar>
+        </ion-slide>
+    </ion-slides>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>

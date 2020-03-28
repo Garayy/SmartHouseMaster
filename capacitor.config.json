@@ -1,8 +1,1 @@
-{
-  "appId": "io.ionic.starter",
-  "appName": "platzi-music",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
-}
+{}

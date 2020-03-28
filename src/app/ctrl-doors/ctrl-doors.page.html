@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar color="#09243f">
+        <ion-icon color="white" (click)="backToMenu()" slot="start" size="large" name="arrow-back-outline"></ion-icon>
+        <ion-title color="white" class="ion-text-center">Controlador de Puertas y Ventanas</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <ion-avatar class="square-avatar door-avatar">
+        <img src="{{urlDoorOpen}}" />
+    </ion-avatar> -->
+    <h2>PUERTA</h2>
+    <ion-segment class="segment-door" (ionChange)="segmentChanged($event)">
+        <ion-segment-button href="#close" value="close" >
+            <ion-icon (click)="getAllServo()" name="lock-closed-outline"></ion-icon>
+            <!-- <ion-label>Dogs</ion-label> -->
+        </ion-segment-button>
+        <ion-segment-button href="#open" value="open">
+            <ion-icon name="lock-open-outline"></ion-icon>
+        </ion-segment-button>
+    </ion-segment>
+    <!-- <ion-avatar class="square-avatar door-avatar">
+        <img src="{{urlDoorOpen}}" />
+    </ion-avatar> -->
+    <h2>VENTANA</h2>
+    <ion-segment class="segment-door" (ionChange)="segmentChanged2($event)">
+        <ion-segment-button href="#close" value="close2">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <!-- <ion-label>Dogs</ion-label> -->
+        </ion-segment-button>
+        <ion-segment-button href="#open" value="open2">
+            <ion-icon name="lock-open-outline"></ion-icon>
+        </ion-segment-button>
+    </ion-segment>
+</ion-content>
